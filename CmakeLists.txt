@@ -1,0 +1,20 @@
+project(ScoreWarrior)
+set(CMAKE_CXX_STANDARD 17)
+
+set(SOURCE_FILES
+    main.cpp
+    core/command.h
+    core/coordinates.h
+    core/error.h
+    core/engine/command_executor.h
+    core/engine/engine.cpp
+    core/input_processing/script_parcer.h
+    core/input_processing/script_parcer.cpp
+    core/unit/unit.h
+    core/unit/warrior.h
+    core/unit/warrior.cpp
+    utils/contracts.h
+    utils/logger.h
+    utils/logger.cpp)
+
+add_executable(out ${SOURCE_FILES})
